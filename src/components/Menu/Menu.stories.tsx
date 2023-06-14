@@ -10,11 +10,3 @@ const Template: StoryFn<typeof Menu> = (args) => <Menu {...args} />;
 
 export const Primary = Template.bind({});
 //default values
-Primary.args = {
-  menuLink: [
-    { name: 'story', to: '#' },
-    { name: 'story', to: '#' },
-    { name: 'story', to: '#' },
-    { name: 'story', to: '#' },
-  ],
-};
