@@ -25,7 +25,7 @@ export default function Home({ chars }: HomeProps) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/char');
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URI}/api/char`);
   const data = await res.json();
   const chars: Char[] = JSON.parse(data);
 
