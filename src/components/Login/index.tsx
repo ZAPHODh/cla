@@ -39,7 +39,7 @@ export const LoginForm = () => {
           </Styled.Label>
           <Input
             id={'Input-Name'}
-            placeholder="Luis Martins"
+            placeholder="PunishmenT"
             value={charName}
             onChange={(e) => {
               setCharName(e.target.value);

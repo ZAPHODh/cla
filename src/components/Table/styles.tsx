@@ -41,3 +41,16 @@ export const Tr = styled.tr<{ index: number }>`
 export const Thead = styled.thead`
     width: 100%;
 `;
+export const SearchContainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width:728px) {
+        justify-content: flex-start;
+        padding: 0px 5px;
+    }
+`;
+
+export const Noresults = styled.div`
+    color: black;
+`;

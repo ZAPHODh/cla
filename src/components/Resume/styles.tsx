@@ -10,6 +10,10 @@ export const Wrapper = styled.div`
     padding: 20px;
     background-color:rgb(46, 179, 250) ;
     color: white;
+    @media (max-width:728px) {
+        border-radius: 0px;
+        
+    }
     `}
 `;
 export const P = styled.p`
