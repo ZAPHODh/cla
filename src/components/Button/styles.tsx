@@ -6,10 +6,11 @@ type Button = {
   fontSize: string;
   center: boolean;
   reverse: boolean;
+  margin: string;
 };
 export const Wrapper = styled.button<Button>`
-    ${({ rounded, width, fontSize, center, reverse }) => css`
-        margin: 5px 0px;
+    ${({ rounded, width, fontSize, center, reverse, margin }) => css`
+        margin: ${margin};
         width: ${width};
         padding: 10px;
         display: flex;

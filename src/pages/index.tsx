@@ -5,6 +5,11 @@ export type Char = {
   _id: string | number;
   charName: string;
   position: string;
+  sky: string;
+  chi: number;
+  classChar: string;
+  survivor: number;
+  damage: number;
   __v: number;
 };
 export type HomeProps = {

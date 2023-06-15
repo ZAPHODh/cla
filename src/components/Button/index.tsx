@@ -9,6 +9,7 @@ export type ButtonProps = {
   center?: boolean;
   reverse?: boolean;
   disabled?: boolean;
+  margin?: string;
 };
 
 export const Button = ({
@@ -21,6 +22,7 @@ export const Button = ({
   center = true,
   reverse = false,
   disabled,
+  margin = '5px 0px',
 }: ButtonProps) => {
   return (
     <Styled.Wrapper
@@ -32,6 +34,7 @@ export const Button = ({
       center={center}
       reverse={reverse}
       disabled={disabled}
+      margin={margin}
     >
       {children}
     </Styled.Wrapper>

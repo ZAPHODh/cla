@@ -41,6 +41,7 @@ export const Input = ({
   }
   return (
     <Styled.Wrapper
+      type={type}
       id={id}
       placeholder={placeholder}
       value={value}

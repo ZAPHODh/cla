@@ -7,16 +7,33 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
-  const { charName, position } = req.body;
+  const { charName, position, sky, chi, survivor, damage, classChar } =
+    req.body;
   const { method } = req;
   await dbConnect();
   switch (method) {
     case 'POST': {
-      if (!charName || !position) {
+      if (
+        !charName ||
+        !position ||
+        !sky ||
+        !chi ||
+        !survivor ||
+        !damage ||
+        !classChar
+      ) {
         res.status(400).send('Você não enviou todas as informações');
         return;
       }
-      new Model({ charName, position }).save();
+      new Model({
+        charName,
+        position,
+        sky,
+        chi,
+        survivor,
+        damage,
+        classChar,
+      }).save();
       res.status(200).send('Cadastrado!');
       break;
     }

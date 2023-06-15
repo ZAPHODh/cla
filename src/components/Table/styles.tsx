@@ -13,6 +13,7 @@ export const Wrapper = styled.table`
     @media (max-width:728px) {
         width: 100vw;
         border-radius: 0px;
+        font-size: 10px;
     }
     `}
 `;
@@ -23,12 +24,18 @@ export const TableHeader = styled.th`
     background-color: rgb(46, 179, 250);
     font-weight: bold;
     color: white;
+    @media (max-width:728px) {
+        padding: 10px 2px;
+    }
     `}
 `;
 export const TableCell = styled.td`
   padding: 10px;
   text-align: center;
   border-bottom: 1px dotted rgb(159, 221, 255);
+  @media (max-width:728px) {
+        padding:10px 2px;
+    }
 `;
 
 export const Tr = styled.tr<{ index: number }>`
@@ -41,9 +48,10 @@ export const Tr = styled.tr<{ index: number }>`
 export const Thead = styled.thead`
     width: 100%;
 `;
-export const SearchContainer = styled.div`
+export const FilterContainer = styled.div`
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     @media (max-width:728px) {
         justify-content: flex-start;

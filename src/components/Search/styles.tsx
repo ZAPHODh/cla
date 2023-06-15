@@ -10,6 +10,10 @@ export const Wrapper = styled.form`
   border-radius: 35px;
   overflow: hidden;
   position: relative;
+  @media (max-width:728px) {
+    width: 200px;
+    font-size: 8px;
+    }
   `}
 `;
 
@@ -33,8 +37,8 @@ export const Input = styled.input`
     outline: none;
   }
   &::placeholder{
-    font-weight: bold;
     opacity: 0.5;
+
   }
   `}
 `;
